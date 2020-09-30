@@ -1,16 +1,6 @@
-# Projet Annuel
+# Application PHP
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com) 
-
-Projet annuel de notre 3ème année de Bachelor Ingénierie du Web à l'ESGI.
-
-### Pré-requis
-
-Ce qu'il est requis pour commencer avec le projet...
-
-- PHP
-- MySQL
-- Docker
 
 ### Installation
 
@@ -28,5 +18,4 @@ L'application sera alors disponible à l'adresse http://localhost
 * **Florian BOUCHE** _alias_ [@fkeloks](https://gitlab.com/fkeloks)
 * **Yanis GHLIS** _alias_ [@CopainYanis](https://gitlab.com/CopainYanis)
 * **Emilien GELLAERTS** _alias_ [@emilienglts](https://gitlab.com/emilienglts)
-* **Sabrina SI HADJ MOHAND** _alias_ [@SabrinaSH](https://gitlab.com/SabrinaSH)
 
