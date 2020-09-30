@@ -20,6 +20,7 @@ class AdministrationController extends Controller
 {
     public $security = ['searchAction' => 'administration.search'];
 
+    // We use the indexAction 
     public function indexAction(): void
     {
         if (Auth::getUser()->getGroup() === null) {
@@ -121,6 +122,8 @@ class AdministrationController extends Controller
         $pages = PagesModel::search($search);
         $users = UsersModel::search($search);
 
+
+	// Render the search view
         $this->render('administration.search', 'backend', [
             'search' => $search,
             'count' => count($announcements) + count($events) + count($groups) + count($staff) + count($properties) + count($owners) + count($pages) + count($users),
