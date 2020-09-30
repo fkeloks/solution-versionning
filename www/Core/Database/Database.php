@@ -5,6 +5,7 @@ namespace ESGI\Core\Database;
 use ESGI\Core\Configuration\Config;
 use PDO;
 
+// Fake commit to resolve bug on production
 abstract class Database
 {
     /** @var PDO $pdo */
