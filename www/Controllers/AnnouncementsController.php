@@ -33,8 +33,9 @@ class AnnouncementsController extends Controller
             ->order('created_at', 'desc');
 
         $queryBuilder = Pagination::getQuery(AnnouncementsModel::getTableName(), null, $queryBuilder);
+       
+//Retrieve all the annoucements
         $announcements = AnnouncementsModel::fetchAll($queryBuilder);
-
         $this->render('announcements.index', 'backend', ['announcements' => $announcements]);
     }
 
