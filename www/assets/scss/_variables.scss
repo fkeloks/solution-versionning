@@ -1,0 +1,40 @@
+// Colors
+$grey-1: #333333;
+$grey-2: #4F4F4F;
+$grey-3: #828282;
+$grey-4: #BDBDBD;
+$grey-5: #E0E0E0;
+$grey-6: #F2F2F2;
+$blue-1: #2F80ED;
+$blue-2: #2D9CDB;
+$blue-3: #56CCF2;
+$red: #EB5757;
+$orange: #F2994A;
+$yellow: #F2C94C;
+$green-1: #219653;
+$green-2: #27AE60;
+$green-3: #6FCF97;
+$violet: #BB6BD9;
+
+// Content
+$content-padding: 50px;
+
+// Grid
+$grid-cols: 12;
+$grid-gutter: 10px;
+$grid-max-width: 1200px + ($grid-gutter * 2);
+
+// Breakpoints
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1280px;
+$breakpoints: (
+        'xs' '(max-width: ' + $breakpoint-xs + ')',
+        'sm' '(min-width: ' + ($breakpoint-xs + 1) + ')',
+        'md' '(min-width: ' + ($breakpoint-sm + 1) + ')',
+        'lg' '(min-width: ' + ($breakpoint-md + 1) + ')'
+);
+
+// Cards
+$cards-border-radius: 12px;

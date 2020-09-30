@@ -1,0 +1,228 @@
+{
+  "modules": {
+    "banner": {
+      "label": "Bannière",
+      "iterable": {
+        "key": "sections"
+      },
+      "inputs": [
+        {
+          "name": "text",
+          "label": "Texte de la section",
+          "attributes": {
+            "type": "text",
+            "placeholder": "Ex : Ma super section"
+          }
+        }
+      ]
+    },
+    "article": {
+      "label": "Article",
+      "inputs": [
+        {
+          "name": "title",
+          "label": "Titre",
+          "attributes": {
+            "type": "text",
+            "placeholder": "Ex : Le titre de l'article"
+          }
+        },
+        {
+          "name": "text",
+          "label": "Text",
+          "attributes": {
+            "type": "wysiwyg",
+            "placeholder": "Ex : Le text de l'article"
+          }
+        }
+      ]
+    },
+    "card": {
+      "label": "Cartes",
+      "iterable": {
+        "key": "cards"
+      },
+      "inputs": [
+        {
+          "name": "title",
+          "label": "Titre",
+          "attributes": {
+            "type": "text",
+            "placeholder": "Ex : Titre de la carte"
+          }
+        },
+        {
+          "name": "image",
+          "label": "Image",
+          "attributes": {
+            "type": "image",
+            "placeholder": "Ex : https://images.unsplash.com/photo-1502672260266-1c1ef2d93688"
+          }
+        },
+        {
+          "name": "text",
+          "label": "Texte",
+          "attributes": {
+            "type": "wysiwyg",
+            "placeholder": "Ex : Description de la carte"
+          }
+        }
+      ]
+    },
+    "header": {
+      "label": "Entête",
+      "iterable": {
+        "key": "links"
+      },
+      "inputs": [
+        {
+          "name": "link",
+          "label": "Lien",
+          "attributes": {
+            "type": "text",
+            "placeholder": "Ex : /contact"
+          }
+        },
+        {
+          "name": "label",
+          "label": "Label",
+          "attributes": {
+            "type": "text",
+            "placeholder": "Ex : Accueil"
+          }
+        }
+      ]
+    },
+    "footer": {
+      "label": "Pied de page",
+      "iterable": {
+        "key": "links"
+      },
+      "inputs": [
+        {
+          "name": "link",
+          "label": "Lien",
+          "attributes": {
+            "type": "text",
+            "placeholder": "Ex : /contact"
+          }
+        },
+        {
+          "name": "label",
+          "label": "Label",
+          "attributes": {
+            "type": "text",
+            "placeholder": "Ex : Nous contacter"
+          }
+        }
+      ]
+    },
+    "text": {
+      "label": "Texte",
+      "inputs": [
+        {
+          "name": "text",
+          "label": "Texte",
+          "attributes": {
+            "type": "textarea",
+            "placeholder": "Ex : Mon super paragraphe"
+          }
+        }
+      ]
+    },
+    "rich_content": {
+      "label": "Contenu riche",
+      "inputs": [
+        {
+          "name": "content",
+          "label": "Contenu",
+          "attributes": {
+            "type": "wysiwyg"
+          }
+        }
+      ]
+    },
+    "title": {
+      "label": "Titre",
+      "inputs": [
+        {
+          "name": "text",
+          "label": "Titre",
+          "attributes": {
+            "type": "text",
+            "placeholder": "Ex : Bienvenue sur mon site"
+          }
+        },
+        {
+          "name": "level",
+          "label": "Niveau",
+          "attributes": {
+            "type": "text",
+            "placeholder": "Ex : 1"
+          }
+        }
+      ]
+    },
+    "link": {
+      "label": "Lien",
+      "inputs": [
+        {
+          "name": "link",
+          "label": "Lien",
+          "attributes": {
+            "type": "url",
+            "placeholder": "Ex : https://mon-super-lien"
+          }
+        },
+        {
+          "name": "name",
+          "label": "Nom",
+          "attributes": {
+            "type": "text",
+            "placeholder": "Ex: Cliquez ici !"
+          }
+        }
+      ]
+    },
+    "form": {
+      "label": "Formulaire",
+      "iterable": {
+        "key": "input"
+      },
+      "inputs": [
+        {
+          "name": "link",
+          "label": "Redirection du formulaire",
+          "attributes": {
+            "type": "text",
+            "placeholder": "Ex: /Accueil"
+          }
+        },
+        {
+          "name": "field",
+          "label": "Champ(s)",
+          "attributes": {
+            "type": "text",
+            "placeholder": "Ex : Nom/Adresse/etc..."
+          }
+        }
+      ]
+    },
+    "list": {
+      "label": "Liste",
+      "iterable": {
+        "key": "input"
+      },
+      "inputs": [
+        {
+          "name": "element",
+          "label": "Element",
+          "attributes": {
+            "type": "text",
+            "placeholder": "Ex: 1er element"
+          }
+        }
+      ]
+    }
+  }
+}

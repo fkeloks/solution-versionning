@@ -1,0 +1,50 @@
+.cards-wrapper {
+    position: relative;
+    padding-top: 20px;
+
+    &::after {
+        @include full-size-background();
+        background-color: $grey-6;
+    }
+}
+
+.card {
+    display: block;
+    width: 100%;
+    background-color: #FFF;
+    border: 1px solid $grey-5;
+    border-radius: $cards-border-radius;
+    margin-bottom: 20px;
+
+    .card-link {
+        text-decoration: none;
+    }
+
+    .card-image {
+        display: block;
+        width: 100%;
+        border-top-left-radius: $cards-border-radius;
+        border-top-right-radius: $cards-border-radius;
+    }
+
+    .card-title {
+        padding: 0 20px;
+        margin-top: 20px;
+        color: $grey-1;
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    div.card-text, p.card-text {
+        padding: 0 20px;
+        margin-bottom: 20px;
+        color: $grey-2;
+        font-weight: 300;
+
+        img, video {
+            max-width: 100%;
+        }
+    }
+}

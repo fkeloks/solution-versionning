@@ -1,0 +1,35 @@
+.title {
+    margin-bottom: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: $grey-1;
+}
+
+.title-1 {
+    @extend .title;
+    @include font-size(48px);
+}
+
+.title-2 {
+    @extend .title;
+    @include font-size(32px);
+}
+
+.title-3 {
+    @extend .title;
+    @include font-size(28px);
+}
+
+.title-4 {
+    @extend .title;
+    @include font-size(24px);
+
+    font-weight: 300;
+}
+
+.title-5 {
+    @extend .title;
+    @include font-size(20px);
+
+    font-weight: 300;
+}

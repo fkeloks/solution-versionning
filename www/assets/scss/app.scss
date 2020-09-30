@@ -1,0 +1,130 @@
+@import 'variables';
+@import 'mixins';
+
+// Helpers
+@import 'helpers/display';
+@import 'helpers/position';
+@import 'helpers/size';
+
+// Components
+@import 'components/banner';
+@import 'components/button';
+@import 'components/card';
+@import 'components/debug';
+@import 'components/footer';
+@import 'components/form';
+@import 'components/grid';
+@import 'components/header';
+@import 'components/link';
+@import 'components/pagination';
+@import 'components/sidebar';
+@import 'components/table';
+@import 'components/title';
+@import 'components/wrapper';
+@import 'components/font';
+
+// Reset
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
+}
+
+p {
+    margin: 0;
+}
+
+hr {
+    border-color: $grey-6;
+    margin: $content-padding auto;
+
+    &.normal-margin {
+        margin: 20px auto;
+    }
+}
+
+details {
+    summary {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .preview {
+        overflow: hidden;
+
+        > * {
+            margin: 0 !important;
+            padding: 10px 0 !important;
+        }
+    }
+}
+
+.content {
+    flex: 1;
+    padding: $content-padding;
+}
+
+@media (max-width: $breakpoint-sm) {
+    .content {
+        padding: 22px;
+    }
+}
+
+.container {
+    @include clearfix;
+
+    flex: 1;
+    max-width: $grid-max-width;
+    margin: 0 auto;
+    padding: 0 $grid-gutter;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.background-white {
+    background-color: #FFF;
+}
+
+.color-white {
+    color: #FFF;
+}
+
+.color-red {
+    color: $red;
+}
+
+.grid-example {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid $grey-2;
+    border-radius: 5px;
+    text-align: center;
+}

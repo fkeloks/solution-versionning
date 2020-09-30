@@ -1,0 +1,33 @@
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-top: 1px solid $grey-5;
+    align-items: center;
+
+    .footer-links {
+        display: flex;
+        height: 100%;
+        align-items: center;
+
+        .footer-link {
+            @include font-size(18px);
+
+            color: $grey-2;
+            font-weight: 400;
+
+            &:not(:first-child) {
+                margin-left: 20px;
+            }
+
+            a {
+                color: inherit;
+                text-decoration: none;
+
+                &:hover, &:focus {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

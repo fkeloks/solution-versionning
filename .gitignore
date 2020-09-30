@@ -1,0 +1,10 @@
+.idea/
+.env
+.php_cs.cache
+docker/database
+www/cache/*.txt
+www/public/uploads
+www/Whoops
+node_modules
+.DS_Store
+.vscode/

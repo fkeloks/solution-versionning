@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="www/public/index.php" colors="true" cacheResult="false">
+    <php>
+        <const name="EXECUTE_AS_PHPUNIT" value="true"/>
+    </php>
+    <testsuites>
+        <testsuite name="Unit">
+            <directory suffix="Test.php">./www/Tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./www/Tests</directory>
+        </whitelist>
+    </filter>
+</phpunit>

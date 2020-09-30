@@ -1,0 +1,29 @@
+{
+  "sidebar": {
+    "links": {
+      "Général": {
+        "administration": "Tableau de bord",
+        "homepage": "Accès au site"
+      },
+      "Section éditoriale": {
+        "pages.index": "Pages",
+        "announcements.index": "Annonces",
+        "announcements.reports": "Signalements",
+        "medias.index": "Médias"
+      },
+      "Section immobilière": {
+        "owners.index": "Propriétaires - locataires",
+        "properties.index": "Propriétés",
+        "batches.index": "Lots",
+        "staff.index": "Personnel",
+        "planning.index": "Planning"
+      },
+      "Administration du site": {
+        "appearance.edit": "Apparence",
+        "settings.index": "Configuration",
+        "users.index": "Utilisateurs",
+        "groups.index": "Groupes"
+      }
+    }
+  }
+}

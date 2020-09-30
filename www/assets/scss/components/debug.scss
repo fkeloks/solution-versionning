@@ -1,0 +1,77 @@
+.debug-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    max-height: 175px;
+    overflow-y: scroll;
+    border-top: 2px solid transparent;
+    padding: 20px 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 10;
+
+    &.open {
+        background-color: #FFF;
+        border-top-color: $grey-5;
+    }
+
+    &:not(.open) {
+        display: none;
+    }
+
+    .debug-bar-title {
+        margin-bottom: 5px;
+        font-weight: bold;
+
+        &:not(:first-child) {
+            margin-top: 10px;
+        }
+    }
+
+    .debug-bar-section {
+        width: 25%;
+        margin-bottom: 20px;
+
+        &.full-width {
+            width: 100%;
+            order: 1;
+        }
+    }
+
+    .debug-bar-section-items:not(:last-child) {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and(max-width: 650px) {
+    .debug-bar {
+        display: none !important;
+    }
+}
+
+.debug-bar-button {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    padding: 5px 10px;
+    border: 1px solid $grey-5;
+    border-radius: 2px;
+    background-color: #FFF;
+    font-size: 20px;
+    cursor: pointer;
+
+    &:hover, &:focus {
+        background-color: $grey-6;
+    }
+
+    &.debug-bar-button-open {
+        top: unset;
+        bottom: 5px;
+        right: unset;
+        left: 5px;
+        font-size: 14px;
+    }
+}

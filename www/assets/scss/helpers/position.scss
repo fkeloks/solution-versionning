@@ -1,0 +1,44 @@
+.float-left {
+    float: left !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+// Margin
+@include decline-4d('margin', 'auto', auto);
+@include decline-4d('margin', '0', 0);
+@include decline-4d('margin', '10', 10px);
+@include decline-4d('margin', '20', 20px);
+@include decline-4d('margin', '40', 40px);
+
+// Padding
+@include decline-4d('padding', '0', 0);
+@include decline-4d('padding', '20', 20px);
+@include decline-4d('padding', '100', 100px);
+@include decline-breakpoints('padding', '100', 100px);
+
+// Display
+@include decline-breakpoints('display', 'none', none);
+@include decline-breakpoints('display', 'block', block);
+@include decline-breakpoints('display', 'inline', inline);
+@include decline-breakpoints('display', 'inline-block', inline-block);
+
+// Flex
+@include decline-breakpoints('flex-direction', 'row', row);
+@include decline-breakpoints('flex-direction', 'row-reverse', row-reverse);
+@include decline-breakpoints('flex-direction', 'column', column);
+@include decline-breakpoints('flex-direction', 'column-reverse', column-reverse);

@@ -1,0 +1,13 @@
+parameters:
+  level: max
+  paths:
+    - www/Controllers
+    - www/Core
+    - www/Models
+    - www/public/index.php
+    - www/helpers.php
+  autoload_directories:
+    - www
+  autoload_files:
+    - www/helpers.php
+  checkMissingIterableValueType: false

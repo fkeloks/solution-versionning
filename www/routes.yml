@@ -1,0 +1,325 @@
+/:
+  controller: Default
+  name: homepage
+  action: page
+
+/composants:
+  controller: Temporary
+  name: tmp.components
+  action: components
+
+/pages/page:
+  controller: Default
+  name: page
+  action: page
+
+/inscription:
+  controller: Auth
+  name: auth.register
+  action: register
+
+/inscription/confirmation:
+  controller: Auth
+  name: auth.confirmation
+  action: confirmation
+
+/connexion:
+  controller: Auth
+  name: auth.login
+  action: login
+
+/deconnexion:
+  controller: Auth
+  name: auth.logout
+  action: logout
+
+/annonces:
+  controller: Announcements
+  name: announcements.show
+  action: show
+
+/administration:
+  controller: Administration
+  name: administration
+  action: index
+  auth: true
+
+/administration/recherche:
+  controller: Administration
+  name: administration.search
+  action: search
+  auth: true
+
+/administration/lots:
+  controller: Batches
+  name: batches.index
+  action: index
+  auth: true
+
+/administration/lots/ajout:
+  controller: Batches
+  name: batches.add
+  action: add
+  auth: true
+
+/administration/lots/edition:
+  controller: Batches
+  name: batches.edit
+  action: edit
+  auth: true
+
+/administration/lots/suppression:
+  controller: Batches
+  name: batches.delete
+  action: delete
+  auth: true
+
+/administration/proprietes:
+  controller: Properties
+  name: properties.index
+  action: index
+  auth: true
+
+/administration/proprietes/ajout:
+  controller: Properties
+  name: properties.add
+  action: add
+  auth: true
+
+/administration/proprietes/edition:
+  controller: Properties
+  name: properties.edit
+  action: edit
+  auth: true
+
+/administration/proprietes/suppression:
+  controller: Properties
+  name: properties.delete
+  action: delete
+  auth: true
+
+/administration/pages:
+  controller: Pages
+  name: pages.index
+  action: index
+  auth: true
+
+/administration/pages/ajout:
+  controller: Pages
+  name: pages.add
+  action: add
+  auth: true
+
+/administration/pages/edition:
+  controller: Pages
+  name: pages.edit
+  action: edit
+  auth: true
+
+/administration/pages/suppression:
+  controller: Pages
+  name: pages.delete
+  action: delete
+  auth: true
+
+/administration/proprietaires:
+  controller: Owners
+  name: owners.index
+  action: index
+  auth: true
+
+/administration/proprietaires/ajout:
+  controller: Owners
+  name: owners.add
+  action: add
+  auth: true
+
+/administration/proprietaires/edition:
+  controller: Owners
+  name: owners.edit
+  action: edit
+  auth: true
+
+/administration/proprietaires/suppression:
+  controller: Owners
+  name: owners.delete
+  action: delete
+  auth: true
+
+/administration/utilisateurs:
+  controller: Users
+  name: users.index
+  action: index
+  auth: true
+
+/administration/utilisateurs/ajout:
+  controller: Users
+  name: users.add
+  action: add
+  auth: true
+
+/administration/utilisateurs/edition:
+  controller: Users
+  name: users.edit
+  action: edit
+  auth: true
+
+/administration/utilisateurs/suppression:
+  controller: Users
+  name: users.delete
+  action: delete
+  auth: true
+
+/administration/personnel:
+  controller: Staff
+  name: staff.index
+  action: index
+  auth: true
+
+/administration/personnel/ajout:
+  controller: Staff
+  name: staff.add
+  action: add
+  auth: true
+
+/administration/personnel/edition:
+  controller: Staff
+  name: staff.edit
+  action: edit
+  auth: true
+
+/administration/personnel/suppression:
+  controller: Staff
+  name: staff.delete
+  action: delete
+  auth: true
+
+/administration/planning:
+  controller: Planning
+  name: planning.index
+  action: index
+  auth: true
+
+/administration/planning/ajout:
+  controller: Planning
+  name: planning.add
+  action: add
+  auth: true
+
+/administration/planning/edition:
+  controller: Planning
+  name: planning.edit
+  action: edit
+  auth: true
+
+/administration/planning/suppression:
+  controller: Planning
+  name: planning.delete
+  action: delete
+  auth: true
+
+/administration/signalements:
+  controller: Announcements
+  name: announcements.reports
+  action: reports
+  auth: true
+
+/administration/annonces/signalement/ajout:
+  controller: Announcements
+  name: announcements.report
+  action: report
+
+/administration/annonces:
+  controller: Announcements
+  name: announcements.index
+  action: index
+  auth: true
+
+/administration/annonces/ajout:
+  controller: Announcements
+  name: announcements.add
+  action: add
+  auth: true
+
+/administration/annonces/edition:
+  controller: Announcements
+  name: announcements.edit
+  action: edit
+  auth: true
+
+/administration/annonces/suppression:
+  controller: Announcements
+  name: announcements.delete
+  action: delete
+  auth: true
+
+/administration/apparence:
+  controller: Appearance
+  name: appearance.edit
+  action: edit
+  auth: true
+
+/administration/groupes:
+  controller: Groups
+  name: groups.index
+  action: index
+  auth: true
+
+/administration/groupes/ajout:
+  controller: Groups
+  name: groups.add
+  action: add
+  auth: true
+
+/administration/groupes/edition:
+  controller: Groups
+  name: groups.edit
+  action: edit
+  auth: true
+
+/administration/groupes/suppression:
+  controller: Groups
+  name: groups.delete
+  action: delete
+  auth: true
+
+/administration/medias:
+  controller: Medias
+  name: medias.index
+  action: index
+  auth: true
+
+/administration/medias/liste:
+  controller: Medias
+  name: medias.list
+  action: list
+  auth: true
+
+/administration/medias/mise-en-ligne:
+  controller: Medias
+  name: medias.upload
+  action: upload
+  auth: true
+
+/administration/medias/suppression:
+  controller: Medias
+  name: medias.delete
+  action: delete
+  auth: true
+
+/administration/configuration:
+  controller: Settings
+  name: settings.index
+  action: index
+  auth: true
+
+/administration/configuration/edition:
+  controller: Settings
+  name: settings.edit
+  action: edit
+  auth: true
+
+/sitemap.xml:
+  controller: Sitemap
+  name: sitemap
+  action: sitemap

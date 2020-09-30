@@ -1,0 +1,110 @@
+.form {
+    .form-group {
+        &:not(:last-child) {
+            margin-bottom: 22px;
+        }
+
+        &.full-width {
+            input, textarea, select {
+                min-width: unset;
+                width: 100%;
+            }
+        }
+
+        &.form-group-checkbox {
+            display: flex;
+            align-items: center;
+
+            label {
+                display: inline;
+                margin: 0 0 0 7px;
+                user-select: none;
+            }
+        }
+
+        &.form-group-inline {
+            display: flex;
+            justify-content: space-between;
+
+            input, textarea, select {
+                // Froala editor inputs
+                &:not([id^=fr-]) {
+                    width: auto !important;
+                    max-width: none !important;
+                }
+            }
+        }
+
+        label {
+            @include font-size(14px);
+
+            display: block;
+            margin-bottom: 10px;
+            color: $grey-3;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            &.fake-label {
+                color: transparent;
+                user-select: none;
+            }
+        }
+
+        input, textarea, select {
+            // Froala editor inputs
+            &:not([id^=fr-]) {
+                height: 40px;
+                border: 1px solid $grey-5;
+                border-radius: 4px;
+                padding-left: 12px;
+
+                &:not([type="checkbox"]) {
+                    max-width: 600px;
+                    width: 100%;
+                }
+
+                &[type="checkbox"] {
+                    display: inline;
+                    height: 20px;
+                    width: 20px;
+                }
+
+                &[type="file"] {
+                    padding-left: 0;
+                    border: none;
+                    height: unset;
+                }
+
+                &.input-small {
+                    height: 28px;
+                }
+            }
+        }
+
+        input::placeholder {
+            color: $grey-3;
+        }
+
+        textarea:not([id^=fr-]) {
+            min-height: 80px;
+            padding: 12px;
+            resize: vertical;
+        }
+    }
+
+    fieldset {
+        margin: 0 0 10px 0;
+        padding: 10px;
+        border: 1px solid $grey-5;
+        border-radius: 4px;
+
+        legend {
+            @include font-size(14px);
+
+            margin: 0 auto;
+            padding: 0 10px;
+            color: $grey-2;
+        }
+    }
+}

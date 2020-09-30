@@ -1,0 +1,47 @@
+version: '3'
+services:
+  php_apache:
+    build: docker/php_apache
+    container_name: php_apache
+    working_dir: /var/www/project
+    ports:
+      - '80:80'
+    volumes:
+      - ./:/var/www/project
+      - ./docker/php_apache/server/000-default.conf:/etc/apache2/sites-available/000-default.conf
+      - ./docker/php_apache/server/apache2.conf:/etc/apache2/apache2.conf
+      - ./docker/php_apache/server/php.ini:/usr/local/etc/php/php.ini
+    depends_on:
+      - database
+      - mailcatcher
+
+  database:
+    image: mysql:5.7
+    container_name: database
+    ports:
+      - '3306:3306'
+    environment:
+      MYSQL_DATABASE: esgi_cms
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: cms
+      MYSQL_PASSWORD: cms
+    volumes:
+      - ./docker/database:/var/lib/mysql
+    restart: always
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin
+    depends_on:
+      - database
+    ports:
+      - '8080:80'
+    environment:
+      - PMA_ARBITRARY=1
+
+  mailcatcher:
+    image: schickling/mailcatcher
+    container_name: mailcatcher
+    ports:
+      - '1080:1080'
+      - '1025:1025'

@@ -1,0 +1,48 @@
+.button {
+    @include font-size(14px);
+
+    display: inline-flex;
+    align-items: center;
+    height: 36px;
+    padding: 0 20px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover, &:focus {
+        opacity: .8;
+    }
+
+    svg {
+        color: #FFF;
+        margin-right: 4px;
+    }
+
+    &.button-small {
+        height: 28px;
+        padding: 0 12px;
+    }
+
+    &.button-blue {
+        background-color: $blue-1;
+    }
+
+    &.button-black {
+        background-color: $grey-1;
+    }
+
+    &.button-green {
+        background-color: $green-1;
+    }
+
+    &.button-red {
+        background-color: $red;
+    }
+
+    &.button-orange {
+        background-color: $orange;
+    }
+}

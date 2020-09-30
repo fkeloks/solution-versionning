@@ -1,0 +1,34 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@mixin grid-loop($name: '') {
+    @for $i from 1 through $grid-cols {
+        $selector: '.col-' + '#{$i}';
+        @if $name != '' {
+            $selector: '.col-' + '#{$name}-#{$i}';
+        }
+
+        #{$selector} {
+            $w: 100 / $grid-cols * $i;
+            @if $w < 100 {
+                width: calc(#{$w + '%'} - #{$grid-gutter});
+            } @else {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include grid-loop();
+
+@each $breakpoint in $breakpoints {
+    $name: nth($breakpoint, 1);
+    $declaration: nth($breakpoint, 2);
+
+    @media #{$declaration} {
+        @include grid-loop($name);
+    }
+}

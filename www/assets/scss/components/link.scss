@@ -1,0 +1,32 @@
+.link {
+    @include font-size(16px);
+
+    display: block;
+    font-weight: 400;
+    color: $grey-2;
+    text-decoration: none;
+
+    &:hover {
+        color: $grey-1;
+        text-decoration: underline;
+    }
+
+    &.link-block {
+        margin-top: 22px;
+    }
+
+    &.link-float-right {
+        float: right;
+        text-align: right;
+    }
+
+    &.link-float-left {
+        float: left;
+        text-align: left;
+    }
+
+    svg {
+        margin-right: 4px;
+        color: $grey-2;
+    }
+}

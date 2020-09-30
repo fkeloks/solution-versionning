@@ -1,0 +1,87 @@
+// Dark theme
+
+.frontend {
+    background-color: #202020 !important;
+
+    main {
+        background-color: #202020 !important;
+    }
+
+    .header, .footer {
+        background-color: #202020 !important;
+    }
+
+    .card {
+        background-color: #323232 !important;
+        border: 1px solid transparent;
+
+        div.card-text, p.card-text {
+            color: white !important;
+        }
+    }
+
+    .header-link, .footer-link {
+        color: white !important;
+    }
+
+    h1, h2, h3, h4, h5, h6, ul, li, .link {
+        color: white !important;
+
+        a {
+            color: inherit !important;
+        }
+    }
+
+    hr {
+        border-color: #FFF2F2 !important;
+    }
+
+    .background-white {
+        background-color: #202020 !important;
+    }
+
+    .color-white {
+        color: #121212 !important;
+    }
+
+    .color-red {
+        color: #ff1111 !important;
+    }
+
+    .grid-example {
+        border: 1px solid white !important;
+    }
+
+    .title, .title-5, .title-4, .title-3, .title-2, .title-1, p {
+        color: white !important;
+    }
+
+    .form-group {
+        label {
+            color: white;
+        }
+
+        input, select {
+            background-color: #323232;
+            color: white;
+            border: 1px solid #161616 !important;
+        }
+
+        input::placeholder {
+            color: white;
+        }
+    }
+}
+
+.banner {
+    .banner-section {
+        z-index: 1;
+        color: white;
+    }
+
+    .banner-background {
+        z-index: 0;
+        background-color: rgba(50, 50, 50, 0.5) !important;
+    }
+}
+

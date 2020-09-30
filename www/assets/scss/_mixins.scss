@@ -1,0 +1,98 @@
+@mixin decline-4d($property, $suffix, $value) {
+    .#{$property}-#{$suffix} {
+        #{$property}: $value !important;
+    }
+
+    @each $declination in (top right bottom left) {
+        body .#{$property}-#{$declination}-#{$suffix} {
+            #{$property}-#{$declination}: $value !important;
+        }
+    }
+}
+
+@mixin decline-breakpoints($property, $suffix, $value) {
+    .#{$property}-#{$suffix} {
+        #{$property}: $value !important;
+    }
+
+    @each $breakpoint in $breakpoints {
+        $name: nth($breakpoint, 1);
+        $declaration: nth($breakpoint, 2);
+
+        @media #{$declaration} {
+            body .#{$property}-#{$name}-#{$suffix} {
+                #{$property}: $value !important;
+            }
+        }
+    }
+}
+
+@mixin clearfix {
+    &:before, &:after {
+        content: ' ';
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// Default font size on html element is 100%, equivalent to 16px;
+@mixin font-size($size) {
+    font-size: #{$size / 16px}rem;
+}
+
+@mixin full-size-background() {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -1000px;
+    right: -1000px;
+    height: 100%;
+    z-index: -1;
+}
+
+@mixin grid-loop($name) {
+    @for $i from 0 through $grid-columns {
+        @if $i != 0 {
+            .col-#{$name}-#{$i} {
+                width: percentage($i/$grid-columns);
+
+                .row-flex & {
+                    flex-basis: percentage($i/$grid-columns);
+                    max-width: percentage($i/$grid-columns);
+                    width: auto;
+                    float: none;
+                }
+            }
+        }
+        .col-#{$name}-offset-#{$i} {
+            margin-left: percentage($i/$grid-columns);
+        }
+    }
+}
+
+
+@mixin background($name, $colors) {
+    @each $color in $colors {
+        $index: index($colors, $color);
+        .background-#{$name}-#{$index} {
+            background-color: $color;
+        }
+    }
+}
+
+@include background('gray', (
+        $grey-1,
+        $grey-2,
+        $grey-3,
+        $grey-4,
+        $grey-5,
+        $grey-6,
+));
+
+@include background('blue', (
+        $blue-1,
+        $blue-2,
+        $blue-3,
+));

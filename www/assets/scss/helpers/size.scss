@@ -1,0 +1,11 @@
+.full-height {
+    min-height: 100vh;
+}
+
+.full-width {
+    width: 100%;
+}
+
+@include decline-breakpoints('min-height', 'unset', unset);
+@include decline-breakpoints('min-height', 'full', 100vh);
+@include decline-breakpoints('min-width', 'unset', unset);
