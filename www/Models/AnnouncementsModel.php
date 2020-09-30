@@ -111,6 +111,7 @@ class AnnouncementsModel extends Model
      */
     public function getPicture(): string
     {
+        // Image par défaut, si aucune image est sélectionnée
         return $this->picture ?: 'https://via.placeholder.com/960x635?text=Aucune+image';
     }
 
