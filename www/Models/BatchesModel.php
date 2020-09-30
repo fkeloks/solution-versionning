@@ -74,6 +74,7 @@ class BatchesModel extends Model
      */
     public function getSurface(): string
     {
+        // Reformatage de la surface
         return number_format($this->surface, 2, ',', ' ');
     }
 
