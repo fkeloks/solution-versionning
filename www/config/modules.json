@@ -3,11 +3,11 @@
     "banner": {
       "label": "Bannière",
       "iterable": {
-        "key": "sections"
+        "key": "banners"
       },
       "inputs": [
         {
-          "name": "text",
+          "name": "text_banner",
           "label": "Texte de la section",
           "attributes": {
             "type": "text",
