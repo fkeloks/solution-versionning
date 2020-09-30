@@ -19,3 +19,4 @@ L'application sera alors disponible à l'adresse http://localhost
 * **Yanis GHLIS** _alias_ [@CopainYanis](https://gitlab.com/CopainYanis)
 * **Emilien GELLAERTS** _alias_ [@emilienglts](https://gitlab.com/emilienglts)
 
+Merci à vous
